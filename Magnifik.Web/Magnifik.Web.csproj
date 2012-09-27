@@ -131,6 +131,9 @@
   <ItemGroup>
     <Content Include="Content\images\favicon.png" />
     <Content Include="Content\images\logo-32x32.png" />
+    <Content Include="Content\images\mm-drawing-160x298.png" />
+    <Content Include="Content\images\mm-drawing-250x466.png" />
+    <Content Include="Content\images\mm-drawing-480x895.png" />
     <Content Include="Content\images\tree-transparent-640x480.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />

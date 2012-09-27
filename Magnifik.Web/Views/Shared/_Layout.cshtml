@@ -33,7 +33,13 @@
             <div style="clear: both;">
             </div>
             <div id="footer">
-                @RenderSection("Footer", required: false)
+                <table style="width: 100%;">
+                  <tr>
+                    <td style="width: 20%;"></td>
+                    <td><p>&copy; @DateTime.Now.Year Rob Thijssen. All rights reserved.</p></td>
+                    <td style="width: 20%;"></td>
+                  </tr>
+                </table>
             </div>
         </div>
         <div style="clear: both;"></div>
