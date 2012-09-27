@@ -134,6 +134,7 @@
     <Content Include="Content\images\mm-drawing-160x298.png" />
     <Content Include="Content\images\mm-drawing-250x466.png" />
     <Content Include="Content\images\mm-drawing-480x895.png" />
+    <Content Include="Content\images\p9161082-250x600.jpg" />
     <Content Include="Content\images\tree-transparent-640x480.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -229,6 +230,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Draken.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

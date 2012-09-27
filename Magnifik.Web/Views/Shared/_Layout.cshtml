@@ -21,7 +21,14 @@
             </div>
             <div id="main-content">
                 <div id="right-sidebar">
-                    @RenderSection("RightContent", required: false)
+                    <h3>Explore</h3>
+                    <ul>
+                        <li>@Html.ActionLink("History", "Index", "Home")</li>
+                        <li>Boats in the wild</li>
+                        <li>@Html.ActionLink("Draken", "Draken", "Home")</li>
+                        <li>Adventures</li>
+                        <li>Refits</li>
+                    </ul>
                 </div>
                 <div id="centre-content">
                     @RenderBody()
