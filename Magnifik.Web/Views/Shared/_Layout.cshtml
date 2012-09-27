@@ -4,12 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="@Url.Content("~/favicon.ico")" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <!-- Analytics -->
+    <script type="text/javascript">
+        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-19263120-1']); _gaq.push(['_setDomainName', 'none']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
+    </script>
+    @RenderSection("HeadContent", required: false)
 </head>
 <body>
-    @RenderBody()
-
+    <div id="page-wrap">
+        <div id="inside">
+            <div id="header">
+                <h1><a href="@Url.Content("~/")"><img src="@Url.Content("~/Content/images/logo-32x32.png")" alt="logo" />magnifik<span>.org</span></a></h1>
+            </div>
+            <div id="main-content">
+                <div id="right-sidebar">
+                    @RenderSection("RightContent", required: false)
+                </div>
+                <div id="centre-content">
+                    @RenderBody()
+                </div>
+            </div>
+            <div id="left-sidebar">
+                @RenderSection("LeftContent", required: false)
+            </div>
+            <div style="clear: both;">
+            </div>
+            <div id="footer">
+                @RenderSection("Footer", required: false)
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
 </body>
